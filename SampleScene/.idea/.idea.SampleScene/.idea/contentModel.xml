@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Administrator\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Administrator\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_SampleScene.2109275229.00" t="ExcludeRecursive" />
+    <e p="F:\SikiA\UGUI\SampleScene" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="_MyScripts" t="Include">
+          <e p="Example 1" t="Include">
+            <e p="Click3DGameObjectChangeColor.cs" t="Include" />
+            <e p="ClickUIChangeColor.cs" t="Include" />
+          </e>
+          <e p="Example 2.1" t="Include">
+            <e p="CircleImageSolution   （制作圆形Image组件）" t="Include">
+              <e p="CircleImage.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Example 2.2" t="Include">
+            <e p="CircleImage CDCooling And MyAccurateClick  (规则多边形button精准点击方案，圆形ImageCD冷却方案)" t="Include">
+              <e p="CircleImage.cs" t="Include" />
+            </e>
+            <e p="CustomImage  (不规则多边形button精准点击方案)" t="Include">
+              <e p="CustomImage.cs" t="Include" />
+            </e>
+            <e p="Unity官方   (多边形Button精准点击解决方案)" t="Include">
+              <e p="UnityAccurateClick.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Example 3" t="Include">
+            <e p="RotationDiagram2D.cs" t="Include" />
+            <e p="RotationDiagramItem.cs" t="Include" />
+          </e>
+          <e p="Example 4" t="Include">
+            <e p="RadarChart.cs" t="Include" />
+            <e p="RadarChartHandler.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Demigiant" t="Include">
+          <e p="DemiLib" t="Include">
+            <e p="Core" t="Include">
+              <e p="DemiLib.xml" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="DemiEditor.xml" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+          <e p="DOTweenPro" t="Include">
+            <e p="DOTweenAnimation.cs" t="Include" />
+            <e p="DOTweenProShortcuts.cs" t="Include" />
+            <e p="DOTweenTextMeshPro.cs" t="Include" />
+            <e p="DOTweenTk2d.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="DOTweenAnimationInspector.cs" t="Include" />
+              <e p="DOTweenPreviewManager.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+          <e p="readme_DOTweenPro.txt" t="Include" />
+        </e>
+        <e p="Editor" t="Include">
+          <e p="CircleImageEditor.cs" t="Include" />
+          <e p="CustomImageEditor.cs" t="Include" />
+          <e p="RadarChartEditor.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="SampleScene.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
