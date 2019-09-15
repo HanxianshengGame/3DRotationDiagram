@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_MyScenes/Example 4 (Radarchart).unity
+- path: Assets/_MyScenes/Example 3 (3D RotationDiagram).unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

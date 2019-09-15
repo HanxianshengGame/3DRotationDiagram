@@ -1,22 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
-using System.Linq;
 
-namespace Example3
+namespace _MyScripts.Example_3
 {
     public class RotationDiagram2D : MonoBehaviour
     {
         // Start is called before the first frame update
-        public Vector2 ItemSize;
-        public Sprite[] ItemSprites;
-        public float itemOffset;   //间距
-        private List<RotationDiagramItem> itemsList;
-        private List<ItemPosData> itemPosList;
-        public float scaleMax;
-        public float scaleMin;
+        public Vector2 ItemSize;//子物体尺寸
+        public Sprite[] ItemSprites;//子物体的Sprite图集
+        public float itemOffset;   //子物体之间的间距
+        private List<RotationDiagramItem> itemsList;//轮转子物体脚本集合
+        private List<ItemPosData> itemPosList;//子物体的坐标集合
+        public float scaleMax;//最大缩放
+        public float scaleMin;//最小缩放
         void Start()
         {
             itemsList = new List<RotationDiagramItem>();
@@ -27,10 +25,6 @@ namespace Example3
         }
 
         // Update is called once per frame
-        void Update()
-        {
-
-        }
         private void SetItemData()
         {
             for (int i = 0; i < itemsList.Count; i++)
@@ -66,6 +60,11 @@ namespace Example3
             }
             Destroy(template);
         }
+        
+        /// <summary>
+        /// 改变
+        /// </summary>
+        /// <param name="offsetX"></param>
         private void Change(float offsetX)
         {
             int symbol = offsetX > 0 ? 1 : -1;
@@ -77,9 +76,10 @@ namespace Example3
             {
                 item.ChangeId(symbol, itemsList.Count);
             }
-            for (int i = 0; i < itemsList.Count; i++)
+
+            foreach (var item in itemsList)
             {
-                itemsList[i].SetPosData(itemPosList[itemsList[i].PosId]);
+                item.SetPosData(itemPosList[item.PosId]);
             }
         }
 
@@ -112,7 +112,12 @@ namespace Example3
             }
 
         }
-
+        /// <summary>
+        /// 得到x轴坐标
+        /// </summary>
+        /// <param name="radio">周长占比系数</param>
+        /// <param name="length">周长</param>
+        /// <returns></returns>
         private float GetX(float radio,float length)
         {
             if(radio>1||radio<0)
@@ -134,6 +139,13 @@ namespace Example3
                 return (radio-1) * length;
             }
         }
+        /// <summary>
+        /// 得到缩放系数
+        /// </summary>
+        /// <param name="radio">周长占比系数</param>
+        /// <param name="max">缩放最大值</param>
+        /// <param name="min">缩放最小值</param>
+        /// <returns></returns>
         private float GetScaleTimes(float radio,float max,float min)
         {
             if (radio > 1 || radio < 0)

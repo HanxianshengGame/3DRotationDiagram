@@ -1,11 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
-using System;
+﻿using System;
+using System.Collections;
 using DG.Tweening;
-namespace Example3 {
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+namespace _MyScripts.Example_3 {
     public class RotationDiagramItem : MonoBehaviour,IDragHandler,IEndDragHandler
     {
         // Start is called before the first frame update
